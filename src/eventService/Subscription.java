@@ -1,16 +1,20 @@
 package eventService;
-import filters.Filter;
 
 public class Subscription {
 
-	public Class eventType;
-	public Filter filter;
-	public Subscriber subscriber;
+	private Class eventType;
+	private Subscriber subscriber;
 
-	public Subscription(Class anEventType, Filter aFilter, Subscriber aSubscriber) {
+	public Subscription(Class anEventType, Subscriber aSubscriber) {
 		eventType = anEventType;
-		filter = aFilter;
 		subscriber = aSubscriber;
 	}
 
+	public Class getEventType(){
+		return eventType;
+	}
+
+	public Subscriber getSubscriber() {
+		return subscriber;
+	}
 }

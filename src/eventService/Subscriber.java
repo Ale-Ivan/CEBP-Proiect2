@@ -7,4 +7,8 @@ public interface Subscriber {
 
 	String getName();
 
+	void addEventType(Class eventType);
+
+	void removeEventType(Class eventType);
+
 }
